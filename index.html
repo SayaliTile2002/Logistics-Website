@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SR Bajrang Logistics — Fast Routes, Trusted Hands</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOP INFO BAR ===== -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <span class="topbar-item"><i class="fas fa-envelope"></i> srbajranglogistics@gmail.com</span>
+      <span class="topbar-item"><i class="fas fa-phone"></i> +91 88888 69833 &nbsp;|&nbsp; +91 75587 39179</span>
+      <span class="topbar-item"><i class="fas fa-map-marker-alt"></i> Ambad, Nashik, Maharashtra</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#" class="topbar-social"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="topbar-social"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="topbar-social"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://wa.me/918888869833" target="_blank" class="topbar-social"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <a href="#home" class="nav-brand">
+      <img src="images/logo.png" alt="SR Bajrang Logistics Logo" class="nav-logo" />
+      <div class="nav-brand-text">
+        <div class="nav-brand-name">
+          <span class="sr-bajrang">SR BAJRANG</span>
+          <span class="logistics-word">LOGISTICS</span>
+        </div>
+        <div class="nav-brand-slogan">Fast Routes, Trusted Hands</div>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#branches" class="nav-link">Network</a></li>
+      <li><a href="#contact" class="nav-link nav-cta-btn">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== TICKER BAR ===== -->
+  <div class="ticker-bar">
+    <div class="ticker-track">
+      <div class="ticker-inner" id="tickerInner">
+        <span class="ticker-item"><i class="fas fa-truck"></i> Trusted Since 2001</span>
+        <span class="ticker-item"><i class="fas fa-map-marked-alt"></i> Pan-India Network</span>
+        <span class="ticker-item"><i class="fas fa-shipping-fast"></i> Express Delivery</span>
+        <span class="ticker-item"><i class="fas fa-warehouse"></i> Warehousing Solutions</span>
+        <span class="ticker-item"><i class="fas fa-shield-alt"></i> Safe &amp; Insured Freight</span>
+        <span class="ticker-item"><i class="fas fa-box"></i> Full &amp; Part Load</span>
+        <span class="ticker-item"><i class="fas fa-headset"></i> 24/7 Customer Support</span>
+        <span class="ticker-item"><i class="fas fa-truck"></i> Trusted Since 2001</span>
+        <span class="ticker-item"><i class="fas fa-map-marked-alt"></i> Pan-India Network</span>
+        <span class="ticker-item"><i class="fas fa-shipping-fast"></i> Express Delivery</span>
+        <span class="ticker-item"><i class="fas fa-warehouse"></i> Warehousing Solutions</span>
+        <span class="ticker-item"><i class="fas fa-shield-alt"></i> Safe &amp; Insured Freight</span>
+        <span class="ticker-item"><i class="fas fa-box"></i> Full &amp; Part Load</span>
+        <span class="ticker-item"><i class="fas fa-headset"></i> 24/7 Customer Support</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home">
+    <div class="hero-bg">
+      <div class="hero-slide active" style="background-image:url('images/truck-1.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/truck-2.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/mission-Picsart-AiImageEnhancer.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span>India's Trusted Logistics Partner Since 2001</span>
+      </div>
+      <h1 class="hero-title">
+        Moving India<br>
+        <span class="hero-accent" id="heroAccent">Forward Together</span>
+      </h1>
+      <p class="hero-desc" id="heroDesc">
+        SR Bajrang Logistics delivers your goods safely, on time, and with the highest level of professionalism. Decades of trust, nationwide reach, zero compromise.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Get A Free Quote</a>
+        <a href="#about" class="btn-outline">Our Story &nbsp;<i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- slide dots -->
+    <div class="hero-dots">
+      <span class="hero-dot active" onclick="goSlide(0)"></span>
+      <span class="hero-dot" onclick="goSlide(1)"></span>
+      <span class="hero-dot" onclick="goSlide(2)"></span>
+    </div>
+
+    <!-- stats bar -->
+    <div class="hero-stats-bar">
+      <div class="h-stat"><span class="h-stat-num">2001</span><span class="h-stat-lbl">Established</span></div>
+      <div class="h-stat"><span class="h-stat-num">24+</span><span class="h-stat-lbl">Years of Trust</span></div>
+      <div class="h-stat"><span class="h-stat-num">9+</span><span class="h-stat-lbl">Branch Offices</span></div>
+      <div class="h-stat"><span class="h-stat-num">Pan-India</span><span class="h-stat-lbl">Coverage</span></div>
+      <div class="h-stat"><span class="h-stat-num">6+</span><span class="h-stat-lbl">Core Services</span></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section-pad bg-white">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-media reveal-left">
+          <div class="about-img-wrap">
+            <img src="images/about1.webp" alt="SR Bajrang Logistics Team" />
+            <div class="about-corner-decor"></div>
+          </div>
+          <div class="about-badge-card">
+            <span class="about-badge-num">24+</span>
+            <span class="about-badge-lbl">Years of Trust</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <p class="section-eyebrow">About SR Bajrang Logistics</p>
+          <h2 class="section-title">Built On Trust.<br>Driven By Excellence.</h2>
+          <div class="about-body">
+            <p>Since <strong>2001</strong>, we began as <strong>R.K. Daware Transport</strong> — built on dedication, reliability, and genuine care for our clients.</p>
+            <p>Today, we proudly stand as <strong>SR Bajrang Logistics</strong> — a modern logistics company blending decades of experience with smart technology and a nationwide fleet.</p>
+            <p>Our legacy is <strong>trust, transparency, and timely delivery</strong> — making us a true long-term partner in your supply chain journey.</p>
+          </div>
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fas fa-bolt"></i></div>
+              <div><p class="pillar-title">Speed &amp; Efficiency</p><p class="pillar-desc">On-time delivery, every time</p></div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fas fa-shield-alt"></i></div>
+              <div><p class="pillar-title">Safe &amp; Secure</p><p class="pillar-desc">GPS tracked, insured cargo</p></div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div><p class="pillar-title">Wide Network</p><p class="pillar-desc">9+ offices across Maharashtra</p></div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fas fa-handshake"></i></div>
+              <div><p class="pillar-title">Client First</p><p class="pillar-desc">Dedicated support always</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AUTO-SCROLL IMAGE GALLERY ===== -->
+  <div class="gallery-strip">
+    <div class="gallery-row" id="galleryRow">
+      <div class="g-item"><img src="images/truck-1.jpg" alt="SR Bajrang Fleet" /></div>
+      <div class="g-item"><img src="images/truck-2.jpg" alt="Logistics Transport" /></div>
+      <div class="g-item"><img src="images/fullLoad.jpeg" alt="Full Truck Load" /></div>
+      <div class="g-item"><img src="images/warehousing.jpg" alt="Warehousing" /></div>
+      <div class="g-item"><img src="images/service-2.jpg" alt="Express Delivery" /></div>
+      <div class="g-item"><img src="images/service-5.jpg" alt="Pan India Coverage" /></div>
+      <div class="g-item"><img src="images/service-6.jpg" alt="Safe Transport" /></div>
+      <div class="g-item"><img src="images/part load.jpg" alt="Part Load" /></div>
+      <!-- duplicated for seamless loop -->
+      <div class="g-item"><img src="images/truck-1.jpg" alt="SR Bajrang Fleet" /></div>
+      <div class="g-item"><img src="images/truck-2.jpg" alt="Logistics Transport" /></div>
+      <div class="g-item"><img src="images/fullLoad.jpeg" alt="Full Truck Load" /></div>
+      <div class="g-item"><img src="images/warehousing.jpg" alt="Warehousing" /></div>
+      <div class="g-item"><img src="images/service-2.jpg" alt="Express Delivery" /></div>
+      <div class="g-item"><img src="images/service-5.jpg" alt="Pan India Coverage" /></div>
+      <div class="g-item"><img src="images/service-6.jpg" alt="Safe Transport" /></div>
+      <div class="g-item"><img src="images/part load.jpg" alt="Part Load" /></div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="section-pad bg-offwhite">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-eyebrow">What We Offer</p>
+          <h2 class="section-title">Our Core Services</h2>
+        </div>
+        <p class="section-subtitle">Smart, reliable logistics solutions crafted to power your business supply chain across India.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="svc-card reveal d1">
+          <div class="svc-img-wrap">
+            <img src="images/fullLoad.jpeg" alt="Full Truck Load" />
+            <span class="svc-tag">Most Popular</span>
+          </div>
+          <div class="svc-body">
+            <div class="svc-row">
+              <div class="svc-icon"><i class="fas fa-truck"></i></div>
+              <h3 class="svc-name">Full Truck Load</h3>
+            </div>
+            <p class="svc-desc">Dedicated full-truck capacity for large shipments. Fast, direct, and secure delivery across India with zero delays.</p>
+            <a href="#contact" class="svc-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal d2">
+          <div class="svc-img-wrap">
+            <img src="images/service-2.jpg" alt="Express Delivery" />
+          </div>
+          <div class="svc-body">
+            <div class="svc-row">
+              <div class="svc-icon"><i class="fas fa-shipping-fast"></i></div>
+              <h3 class="svc-name">Express Delivery</h3>
+            </div>
+            <p class="svc-desc">Time-critical shipments handled with precision. We guarantee your cargo reaches its destination on schedule, every time.</p>
+            <a href="#contact" class="svc-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal d3">
+          <div class="svc-img-wrap">
+            <img src="images/warehousing.jpg" alt="Warehousing" />
+          </div>
+          <div class="svc-body">
+            <div class="svc-row">
+              <div class="svc-icon"><i class="fas fa-warehouse"></i></div>
+              <h3 class="svc-name">Warehousing</h3>
+            </div>
+            <p class="svc-desc">Smart, secure storage with professional inventory management, handling, and real-time stock control at every stage.</p>
+            <a href="#contact" class="svc-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal d1">
+          <div class="svc-img-wrap">
+            <img src="images/part load.jpg" alt="Part Load" />
+          </div>
+          <div class="svc-body">
+            <div class="svc-row">
+              <div class="svc-icon"><i class="fas fa-box-open"></i></div>
+              <h3 class="svc-name">Part Load</h3>
+            </div>
+            <p class="svc-desc">Cost-effective shared transport for smaller consignments. Pay only for what you ship without compromising on speed or safety.</p>
+            <a href="#contact" class="svc-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal d2">
+          <div class="svc-img-wrap">
+            <img src="images/service-5.jpg" alt="Pan-India Network" />
+          </div>
+          <div class="svc-body">
+            <div class="svc-row">
+              <div class="svc-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <h3 class="svc-name">Pan-India Network</h3>
+            </div>
+            <p class="svc-desc">Extensive nationwide coverage with 9+ offices connecting businesses, markets, and communities seamlessly across India.</p>
+            <a href="#contact" class="svc-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="svc-card reveal d3">
+          <div class="svc-img-wrap">
+            <img src="images/service-6.jpg" alt="Safe & Secure" />
+          </div>
+          <div class="svc-body">
+            <div class="svc-row">
+              <div class="svc-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3 class="svc-name">Safe &amp; Secure</h3>
+            </div>
+            <p class="svc-desc">GPS-tracked transport, insured cargo, and experienced drivers ensuring your freight is protected at every mile.</p>
+            <a href="#contact" class="svc-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO / TRANSPORT VISUAL STRIP ===== -->
+  <div class="video-strip">
+    <div class="vs-overlay"></div>
+    <div class="vs-content">
+      <p class="section-eyebrow" style="color:#FF7043;">See Us In Action</p>
+      <h2 class="section-title" style="color:#fff;">Transportation You<br>Can Always Trust</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.72); margin-top:14px;">
+        From highways to delivery points — our fleet keeps India's businesses moving, day and night, rain or shine.
+      </p>
+    </div>
+    <!-- video cards row -->
+    <div class="vs-cards">
+      <div class="vs-card">
+        <video poster="images/truck-1.jpg" autoplay muted loop playsinline>
+          <source src="images/Yellow Black Modern Logistic Video (1).mp4" type="video/mp4">
+        </video>
+        <div class="vs-card-label"><i class="fas fa-play-circle"></i> Fleet On The Move</div>
+      </div>
+      <div class="vs-card">
+        <video poster="images/truck-2.jpg" muted loop playsinline>
+          <source src="videos/loading.mp4" type="video/mp4">
+        </video>
+        <div class="vs-card-label"><i class="fas fa-play-circle"></i> Loading &amp; Dispatch</div>
+      </div>
+      <div class="vs-card">
+        <video poster="images/warehousing.jpg" muted loop playsinline>
+          <source src="videos/warehouse.mp4" type="video/mp4">
+        </video>
+        <div class="vs-card-label"><i class="fas fa-play-circle"></i> Warehouse Operations</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      <div class="section-head reveal" style="justify-content:center; text-align:center; margin-bottom:50px;">
+        <div>
+          <p class="section-eyebrow" style="justify-content:center;">Why Choose Us</p>
+          <h2 class="section-title">The SR Bajrang Difference</h2>
+        </div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal d1">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <h3 class="why-title">On-Time Delivery</h3>
+          <p class="why-desc">We don't miss deadlines. Our logistics planning ensures every shipment arrives exactly when promised.</p>
+        </div>
+        <div class="why-card reveal d2">
+          <div class="why-icon"><i class="fas fa-route"></i></div>
+          <h3 class="why-title">Optimised Routes</h3>
+          <p class="why-desc">Smart route planning reduces transit time and fuel costs, passing savings directly to our clients.</p>
+        </div>
+        <div class="why-card reveal d3">
+          <div class="why-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3 class="why-title">Real-Time Tracking</h3>
+          <p class="why-desc">Know exactly where your shipment is at every moment with live GPS-powered tracking updates.</p>
+        </div>
+        <div class="why-card reveal d4">
+          <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+          <h3 class="why-title">Competitive Pricing</h3>
+          <p class="why-desc">Best-in-class logistics at transparent, fair pricing. No hidden charges, ever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR CLIENTS ===== -->
+  <section class="clients-sec section-pad bg-offwhite">
+    <div class="container">
+      <div class="clients-head reveal" style="text-align:center; margin-bottom:52px;">
+        <p class="section-eyebrow" style="justify-content:center;">Trusted By Industry Leaders</p>
+        <h2 class="section-title">Our Valued Clients</h2>
+        <p class="section-subtitle" style="max-width:540px; margin:14px auto 0;">
+          Leading companies across industries trust SR Bajrang Logistics for dependable, on-time freight solutions every day.
+        </p>
+      </div>
+
+      <!-- Marquee scroll strip -->
+      <div class="cl-marquee">
+        <div class="cl-track">
+
+          <!-- ── UNIDERITEND LTD ── -->
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs>
+                  <linearGradient id="uniGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#003087"/>
+                    <stop offset="100%" stop-color="#0066cc"/>
+                  </linearGradient>
+                </defs>
+                <!-- Hexagon emblem -->
+                <polygon points="28,8 48,8 58,25 48,42 28,42 18,25" fill="url(#uniGrad)" stroke="none"/>
+                <text x="38" y="30" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-weight="bold" fill="#ffffff">U</text>
+                <!-- Company name -->
+                <text x="68" y="22" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#003087" letter-spacing="0.5">UNIDERITEND</text>
+                <text x="68" y="38" font-family="Georgia,serif" font-size="10" fill="#0066cc" letter-spacing="1.5">LIMITED</text>
+                <!-- Underline rule -->
+                <line x1="68" y1="44" x2="200" y2="44" stroke="#003087" stroke-width="1.5"/>
+                <text x="68" y="56" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">INDUSTRIAL SOLUTIONS</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Industrial</span>
+          </div>
+
+          <!-- ── ADVANCE PESTICIDES ── -->
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs>
+                  <linearGradient id="apGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1b5e20"/>
+                    <stop offset="100%" stop-color="#43a047"/>
+                  </linearGradient>
+                </defs>
+                <!-- Leaf / shield shape -->
+                <path d="M28,42 Q18,25 28,8 Q38,20 48,8 Q58,25 48,42 Q38,36 28,42Z" fill="url(#apGrad)"/>
+                <!-- Stem -->
+                <line x1="38" y1="42" x2="38" y2="52" stroke="#1b5e20" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Name -->
+                <text x="62" y="20" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#1b5e20" letter-spacing="0.3">ADVANCE</text>
+                <text x="62" y="36" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#43a047" letter-spacing="0.3">PESTICIDES</text>
+                <line x1="62" y1="42" x2="200" y2="42" stroke="#43a047" stroke-width="1"/>
+                <text x="62" y="53" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">AGRO-CHEMICAL</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Agro-Chemical</span>
+          </div>
+
+          <!-- ── ADASCA INDIA PVT LTD ── -->
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs>
+                  <linearGradient id="adGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4a0080"/>
+                    <stop offset="100%" stop-color="#9c27b0"/>
+                  </linearGradient>
+                </defs>
+                <!-- Circle emblem -->
+                <circle cx="32" cy="26" r="20" fill="url(#adGrad)"/>
+                <!-- A lettermark -->
+                <text x="32" y="33" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#fff">A</text>
+                <!-- Brand name -->
+                <text x="60" y="19" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#4a0080" letter-spacing="1">ADASCA</text>
+                <text x="60" y="34" font-family="Georgia,serif" font-size="10" fill="#9c27b0" letter-spacing="2">INDIA PVT. LTD.</text>
+                <line x1="60" y1="40" x2="205" y2="40" stroke="#9c27b0" stroke-width="1"/>
+                <text x="60" y="52" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">PHARMACEUTICALS</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Pharmaceuticals</span>
+          </div>
+
+          <!-- ── TATA MOTORS ── -->
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs>
+                  <linearGradient id="tmGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1565C0"/>
+                    <stop offset="100%" stop-color="#0d47a1"/>
+                  </linearGradient>
+                </defs>
+                <!-- Oval emblem -->
+                <ellipse cx="34" cy="26" rx="26" ry="20" fill="url(#tmGrad)" stroke="#1976D2" stroke-width="1.5"/>
+                <!-- Stylised T inside oval -->
+                <rect x="24" y="17" width="20" height="4" rx="2" fill="#fff"/>
+                <rect x="32" y="17" width="4" height="18" rx="2" fill="#fff"/>
+                <!-- TATA MOTORS wordmark -->
+                <text x="66" y="21" font-family="Arial,sans-serif" font-size="15" font-weight="900" fill="#1565C0" letter-spacing="2">TATA</text>
+                <text x="66" y="37" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#0d47a1" letter-spacing="3">MOTORS</text>
+                <line x1="66" y1="43" x2="205" y2="43" stroke="#1565C0" stroke-width="1.5"/>
+                <text x="66" y="55" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">AUTOMOTIVE</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Automotive</span>
+          </div>
+
+          <!-- ── JBL PVT LTD ── -->
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs>
+                  <linearGradient id="jblGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#b71c1c"/>
+                    <stop offset="100%" stop-color="#e53935"/>
+                  </linearGradient>
+                </defs>
+                <!-- Bold rounded rectangle badge -->
+                <rect x="8" y="8" width="60" height="38" rx="6" fill="url(#jblGrad)"/>
+                <!-- JBL lettermark -->
+                <text x="38" y="34" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="900" fill="#fff" letter-spacing="-1">JBL</text>
+                <!-- Company text -->
+                <text x="76" y="21" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#b71c1c" letter-spacing="1">JBL</text>
+                <text x="76" y="35" font-family="Arial,sans-serif" font-size="10" fill="#555" letter-spacing="1.5">PVT. LTD.</text>
+                <line x1="76" y1="41" x2="205" y2="41" stroke="#e53935" stroke-width="1"/>
+                <text x="76" y="53" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">ELECTRONICS</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Electronics</span>
+          </div>
+
+          <!-- ══ DUPLICATE SET for seamless loop ══ -->
+
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs><linearGradient id="uniGrad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#003087"/><stop offset="100%" stop-color="#0066cc"/></linearGradient></defs>
+                <polygon points="28,8 48,8 58,25 48,42 28,42 18,25" fill="url(#uniGrad2)"/>
+                <text x="38" y="30" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-weight="bold" fill="#ffffff">U</text>
+                <text x="68" y="22" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#003087" letter-spacing="0.5">UNIDERITEND</text>
+                <text x="68" y="38" font-family="Georgia,serif" font-size="10" fill="#0066cc" letter-spacing="1.5">LIMITED</text>
+                <line x1="68" y1="44" x2="200" y2="44" stroke="#003087" stroke-width="1.5"/>
+                <text x="68" y="56" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">INDUSTRIAL SOLUTIONS</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Industrial</span>
+          </div>
+
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs><linearGradient id="apGrad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1b5e20"/><stop offset="100%" stop-color="#43a047"/></linearGradient></defs>
+                <path d="M28,42 Q18,25 28,8 Q38,20 48,8 Q58,25 48,42 Q38,36 28,42Z" fill="url(#apGrad2)"/>
+                <line x1="38" y1="42" x2="38" y2="52" stroke="#1b5e20" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="62" y="20" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#1b5e20" letter-spacing="0.3">ADVANCE</text>
+                <text x="62" y="36" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#43a047" letter-spacing="0.3">PESTICIDES</text>
+                <line x1="62" y1="42" x2="200" y2="42" stroke="#43a047" stroke-width="1"/>
+                <text x="62" y="53" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">AGRO-CHEMICAL</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Agro-Chemical</span>
+          </div>
+
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs><linearGradient id="adGrad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4a0080"/><stop offset="100%" stop-color="#9c27b0"/></linearGradient></defs>
+                <circle cx="32" cy="26" r="20" fill="url(#adGrad2)"/>
+                <text x="32" y="33" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#fff">A</text>
+                <text x="60" y="19" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#4a0080" letter-spacing="1">ADASCA</text>
+                <text x="60" y="34" font-family="Georgia,serif" font-size="10" fill="#9c27b0" letter-spacing="2">INDIA PVT. LTD.</text>
+                <line x1="60" y1="40" x2="205" y2="40" stroke="#9c27b0" stroke-width="1"/>
+                <text x="60" y="52" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">PHARMACEUTICALS</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Pharmaceuticals</span>
+          </div>
+
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs><linearGradient id="tmGrad2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1565C0"/><stop offset="100%" stop-color="#0d47a1"/></linearGradient></defs>
+                <ellipse cx="34" cy="26" rx="26" ry="20" fill="url(#tmGrad2)" stroke="#1976D2" stroke-width="1.5"/>
+                <rect x="24" y="17" width="20" height="4" rx="2" fill="#fff"/>
+                <rect x="32" y="17" width="4" height="18" rx="2" fill="#fff"/>
+                <text x="66" y="21" font-family="Arial,sans-serif" font-size="15" font-weight="900" fill="#1565C0" letter-spacing="2">TATA</text>
+                <text x="66" y="37" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#0d47a1" letter-spacing="3">MOTORS</text>
+                <line x1="66" y1="43" x2="205" y2="43" stroke="#1565C0" stroke-width="1.5"/>
+                <text x="66" y="55" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">AUTOMOTIVE</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Automotive</span>
+          </div>
+
+          <div class="cl-card">
+            <div class="cl-logo-box">
+              <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="cl-svg">
+                <defs><linearGradient id="jblGrad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#b71c1c"/><stop offset="100%" stop-color="#e53935"/></linearGradient></defs>
+                <rect x="8" y="8" width="60" height="38" rx="6" fill="url(#jblGrad2)"/>
+                <text x="38" y="34" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="900" fill="#fff" letter-spacing="-1">JBL</text>
+                <text x="76" y="21" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#b71c1c" letter-spacing="1">JBL</text>
+                <text x="76" y="35" font-family="Arial,sans-serif" font-size="10" fill="#555" letter-spacing="1.5">PVT. LTD.</text>
+                <line x1="76" y1="41" x2="205" y2="41" stroke="#e53935" stroke-width="1"/>
+                <text x="76" y="53" font-family="Arial,sans-serif" font-size="7.5" fill="#555" letter-spacing="2">ELECTRONICS</text>
+              </svg>
+            </div>
+            <span class="cl-industry">Electronics</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Trust bar -->
+      <div class="cl-trust-bar reveal">
+        <div class="cl-trust-item">
+          <i class="fas fa-handshake"></i>
+          <span>Long-Term Partnerships</span>
+        </div>
+        <div class="cl-trust-divider"></div>
+        <div class="cl-trust-item">
+          <i class="fas fa-star"></i>
+          <span>100% Client Satisfaction</span>
+        </div>
+        <div class="cl-trust-divider"></div>
+        <div class="cl-trust-item">
+          <i class="fas fa-shield-alt"></i>
+          <span>Trusted Across Industries</span>
+        </div>
+        <div class="cl-trust-divider"></div>
+        <div class="cl-trust-item">
+          <i class="fas fa-award"></i>
+          <span>24+ Years of Excellence</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== BRANCHES / NETWORK ===== -->
+  <section id="branches" class="section-pad bg-offwhite">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-eyebrow">Our Network</p>
+          <h2 class="section-title">Where We Operate</h2>
+        </div>
+        <p class="section-subtitle">A strong presence across Maharashtra — connecting businesses through seamless logistics solutions.</p>
+      </div>
+
+      <!-- Head Office -->
+      <div class="hq-card reveal">
+        <div class="hq-left">
+          <div class="hq-icon-box"><i class="fas fa-building"></i></div>
+          <div>
+            <span class="hq-badge">Head Office</span>
+            <h3 class="hq-name">Ambad, Nashik</h3>
+            <p class="hq-addr">SR Bajrang Logistics Pvt. Ltd, Datta Nagar, Near Ganapati Mandir,<br>Ambad, Nashik — 422101, Maharashtra</p>
+          </div>
+        </div>
+        <a href="tel:+918888869833" class="hq-cta"><i class="fas fa-phone"></i> Call Now</a>
+      </div>
+
+      <!-- Branch Cards -->
+      <div class="branches-grid">
+
+        <div class="branch-card reveal d1">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Shinde</h4>
+            <p class="branch-addr">At Post Shinde, NDDC Bank, Near Om Shiv Sai, Nashik — 422101</p>
+          </div>
+        </div>
+
+        <div class="branch-card reveal d2">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Sinnar</h4>
+            <p class="branch-addr">Survey No 936/2b, Plot No 20, Ashoka Road, Malegaon MIDC, Sinnar</p>
+          </div>
+        </div>
+
+        <div class="branch-card reveal d3">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Musalgaon</h4>
+            <p class="branch-addr">Musalgaon Industrial Estate, Nashik — 422112</p>
+          </div>
+        </div>
+
+        <div class="branch-card reveal d1">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Thane</h4>
+            <p class="branch-addr">Thane West, Mumbai — 400601</p>
+          </div>
+        </div>
+
+        <div class="branch-card reveal d2">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Navi Mumbai</h4>
+            <p class="branch-addr">CBD Belapur, Navi Mumbai — 400614</p>
+          </div>
+        </div>
+
+        <div class="branch-card reveal d3">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Andheri</h4>
+            <p class="branch-addr">Ajay Mittal Industrial Premises, Andheri Kurla Road, Andheri (East), Mumbai — 400059</p>
+          </div>
+        </div>
+
+        <div class="branch-card reveal d1">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Vasai</h4>
+            <p class="branch-addr">Sai Samarth Apartment, Chinchpada, Vasai (East), Palghar — 401208</p>
+          </div>
+        </div>
+
+        <div class="branch-card reveal d2">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Bhiwandi</h4>
+            <p class="branch-addr">Vaishali Complex, Bhiwandi, Thane — 421302</p>
+          </div>
+        </div>
+
+        <div class="branch-card reveal d3">
+          <div class="branch-pin"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4 class="branch-city">Pune</h4>
+            <p class="branch-addr">Hinjewadi Phase 1, Pune — 411057</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section-pad bg-white">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">Let's Move Together.</h2>
+        </div>
+        <p class="section-subtitle">Have a shipment to plan or a logistics challenge to solve? Our team responds fast and professionally.</p>
+      </div>
+      <div class="contact-grid">
+
+        <!-- Info Side -->
+        <div class="contact-info reveal-left">
+          <div class="contact-info-cards">
+            <div class="ci-card">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="ci-label">Email</p>
+                <p class="ci-value">srbajranglogistics@gmail.com</p>
+              </div>
+            </div>
+            <div class="ci-card">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="ci-label">Phone</p>
+                <p class="ci-value">+91 88888 69833 &nbsp;|&nbsp; +91 75587 39179</p>
+              </div>
+            </div>
+            <div class="ci-card">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <p class="ci-label">Head Office</p>
+                <p class="ci-value">Ambad, Nashik, Maharashtra — 422101</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-img-wrap">
+            <img src="images/contact1.png" alt="SR Bajrang Logistics Contact" />
+          </div>
+          <div class="contact-social">
+            <a href="#" class="c-social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="c-social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="c-social"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/918888869833" class="c-social"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="contact-form-box reveal-right">
+          <h3 class="form-title">Send Us An Inquiry</h3>
+          <form action="https://formsubmit.co/srbajranglogistics@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Inquiry from SR Bajrang Logistics Website" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display:none" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" name="name" placeholder="Rajesh Kumar" required />
+              </div>
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" name="phone" placeholder="+91 98765 43210" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-group">
+              <label>Service Required</label>
+              <select name="service">
+                <option value="">Select a Service</option>
+                <option>Full Truck Load</option>
+                <option>Part Load</option>
+                <option>Express Delivery</option>
+                <option>Warehousing</option>
+                <option>Pan-India Network</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Your Message *</label>
+              <textarea name="inquiry" rows="5" placeholder="Tell us about your shipment requirements..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              <i class="fas fa-paper-plane"></i> Send Inquiry
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-brand-col">
+            <div class="footer-logo-row">
+              <img src="images/logo.png" alt="SR Bajrang Logistics Logo" class="footer-logo" />
+              <div>
+                <div class="footer-brand-name">
+                  <span class="f-or">SR BAJRANG</span> LOGISTICS
+                </div>
+                <div class="footer-slogan">Fast Routes, Trusted Hands</div>
+              </div>
+            </div>
+            <p class="footer-desc">Since 2001, delivering goods across India with trust, transparency, and technology. Your logistics partner for the long haul.</p>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+              <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+              <li><a href="#branches"><i class="fas fa-chevron-right"></i> Our Network</a></li>
+              <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Our Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services"><i class="fas fa-chevron-right"></i> Full Truck Load</a></li>
+              <li><a href="#services"><i class="fas fa-chevron-right"></i> Part Load</a></li>
+              <li><a href="#services"><i class="fas fa-chevron-right"></i> Express Delivery</a></li>
+              <li><a href="#services"><i class="fas fa-chevron-right"></i> Warehousing</a></li>
+              <li><a href="#services"><i class="fas fa-chevron-right"></i> Pan-India Network</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Contact Us</h4>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>srbajranglogistics@gmail.com</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 88888 69833<br />+91 75587 39179</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ambad, Nashik, Maharashtra — 422101</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">© 2025 <span>SR Bajrang Logistics</span> Pvt. Ltd. — All Rights Reserved</p>
+        <div class="footer-social">
+          <a href="#" class="f-soc"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="f-soc"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="f-soc"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/918888869833" class="f-soc"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <div class="float-group">
+    <a href="https://wa.me/918888869833?text=Hi%20SR%20Bajrang%20Logistics,%20I%20need%20assistance." class="float-btn float-wa" target="_blank" title="WhatsApp Us">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+918888869833" class="float-btn float-call" title="Call Now">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
